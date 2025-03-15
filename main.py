@@ -1,4 +1,6 @@
 from pyrogram import Client, filters
+from test import server 
+
 from pyrogram.types import Message
 from pyrogram.errors import (
     UserIsBlocked, 
@@ -197,5 +199,7 @@ async def stats_command(client, message):
     )
 
 # تشغيل البوت
+server()
+
 print("Broadcast Bot is running...")
 app.run()
